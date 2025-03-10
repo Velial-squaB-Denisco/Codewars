@@ -18,7 +18,15 @@
 
 Все числа в списке являются положительными числами, и список может быть пустым."""
 
-def order_weight(strng):
-    pass
+def order_weight(weights_str):
+
+    weights_list = weights_str.split()
+
+    def calculate_weight(number_str):
+        return sum(int(digit) for digit in number_str)
+
+    sorted_weights = sorted(weights_list, key=lambda x: (calculate_weight(x), x))
+
+    return ' '.join(sorted_weights)
 
 print(order_weight("103 123 4444 99 2000"))

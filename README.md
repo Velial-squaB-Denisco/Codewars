@@ -6,7 +6,6 @@
   <a href="https://www.codewars.com/users/ppoi42477@gmail.com">
     <img src="https://www.codewars.com/users/ppoi42477@gmail.com/badges/large" alt="Codewars"/>
   </a>
-  <br>
 </div>
 
 ## Описание

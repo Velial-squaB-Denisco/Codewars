@@ -1,10 +1,12 @@
-def create_file():
+def create_file(n, name):
 
-    with open ("{name}")
+    filename = f"Kata {n}kyu {name.replace(' ', '_')}.py"
 
+    with open(filename, 'w', encoding='utf-8') as file:
+        file.write() 
 
 def main():
-    pass
+    create_file(6, "Weight for weight")
 
 if __name__ == "__main__":
     main()

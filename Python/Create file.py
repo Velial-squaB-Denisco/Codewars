@@ -6,7 +6,7 @@ def create_file(n, name):
         file.write() 
 
 def main():
-    create_file(6, "Weight for weight")
+    create_file(6, "Nesting Structure Comparison")
 
 if __name__ == "__main__":
     main()

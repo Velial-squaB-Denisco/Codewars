@@ -24,4 +24,4 @@ def narcissistic(value):
     else:
         return f"{value} is not narcissistic"
 
-print(narcissistic(153))
+print(narcissistic(7))

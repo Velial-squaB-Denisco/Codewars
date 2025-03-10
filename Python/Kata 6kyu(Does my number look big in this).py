@@ -20,8 +20,10 @@ def narcissistic(value):
         j += int(i) ** degree
     
     if value == j:
-        return f"{value} is narcissistic"
+        print(f"{value} is narcissistic")
+        return True
     else:
-        return f"{value} is not narcissistic"
+        print(f"{value} is not narcissistic")
+        return False
 
 print(narcissistic(7))

@@ -21,4 +21,4 @@
 def order_weight(strng):
     pass
 
-print(order_weight("103 123 4444 99 2000"))
+print(order_weight("..."))

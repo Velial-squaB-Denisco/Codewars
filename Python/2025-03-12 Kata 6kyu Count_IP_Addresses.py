@@ -17,9 +17,11 @@ def ips_between(start ,end):
         print("i ", i, "pis ", pis)
 
     for pis in range(len(endlist[::-1])):
-        
-        j += int(endlist[::-1][pis])
-        print("j ", j, pis)
+        if int(endlist[::-1][pis]) == 0:
+            print("NULL")
+        else:
+            j += int(endlist[::-1][pis])
+            print("j ", j, pis)
 
     print(i ," --- ", j)
 

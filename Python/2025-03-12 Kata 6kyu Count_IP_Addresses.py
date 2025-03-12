@@ -8,16 +8,16 @@ def ips_between(start ,end):
 
     print(startlist, endlist)
 
-    for a in startlist:
-        for pis in startlist:
-            i += 256 - int(pis)
-            print(i)
+  
+    for pis in startlist:
+        i += 256 - int(pis)
+        print("i ", i, pis)
 
-        for pis in endlist:
-            j += 256 - int(pis)
-            print(j)
+    for pis in endlist:
+        j += 256 - int(pis)
+        print("j ", j)
 
-        print("---")
+    print("---", a)
 
 
 
@@ -31,4 +31,4 @@ def ips_between(start ,end):
 
     return i - j
 
-print(ips_between("256.256.0.0", "256.256.1.0"))
+print(ips_between("256.256.0.0", "256.256.0.50"))

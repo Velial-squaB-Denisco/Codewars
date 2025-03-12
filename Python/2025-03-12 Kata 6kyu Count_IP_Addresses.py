@@ -6,6 +6,8 @@ def ips_between(start ,end):
     startlist = str(start).split()
     endlist = str(end).split()
 
+    print(startlist, endlist)
+
 
 
 

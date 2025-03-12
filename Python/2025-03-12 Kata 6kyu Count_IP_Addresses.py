@@ -4,11 +4,27 @@ def ips_between(start ,end):
     j = 0
     res = 0
 
-    startlist = str(start).split()
-    endlist = str(end).split()
+    startlist = str(start).split(".")
+    endlist = str(end).split(".")
 
     print(startlist, endlist)
 
+  
+    for pis in startlist:
+        if i - 256 == 0:
+            i += 256
+        else:
+            i += 256 - int(pis)
+        print("i ", i, "pis ", pis)
+
+    for pis in endlist:
+        if j - 256 == 0:
+            j += 256
+        else:
+            j += 256 - int(pis)
+        print("j ", j, pis)
+
+    print(i ," --- ", j)
 
 
 
@@ -20,7 +36,6 @@ def ips_between(start ,end):
 
 
 
-
-    return res
+    return i - j
 
 print(ips_between("256.256.0.0", "256.256.1.0"))

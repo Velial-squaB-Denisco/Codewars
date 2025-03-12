@@ -7,9 +7,8 @@ def ips_between(start ,end):
     endlist = str(end).split(".")
 
     print(startlist, endlist)
-
   
-    for pis in startlist:
+    for pis in startlist[::-1]:
         i += int(pis)
         print("i ", i, pis)
 

@@ -8,7 +8,6 @@ def ips_between(start ,end):
 
     print(startlist, endlist)
 
-  
     for pis in startlist:
         if i - 256 == 0:
             i += 256

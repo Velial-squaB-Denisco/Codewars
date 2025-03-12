@@ -6,7 +6,7 @@ def create_file(n, name):
         file.write() 
 
 def main():
-    create_file(6, "Nesting Structure Comparison")
+    create_file(6, "Count IP Addresses")
 
 if __name__ == "__main__":
     main()

@@ -8,28 +8,17 @@ def ips_between(start ,end):
 
     print(startlist, endlist)
   
-    for pis in startlist[::-1]:
-        i += int(pis)
+    for pis in range(len(startlist)):
+        print(3 - pis)
+        i += int(startlist[pis]) * (256 ** (3 - pis))
         print("i ", i, pis)
 
-    for pis in range(len(endlist[::-1])):
-        if int(endlist[::-1][pis]) == 0:
-            print("NULL")
-        else:
-            j += int(endlist[::-1][pis])
-            print("j ", j, pis)
+    for pis in range(len(endlist)):
+        print(3 - pis)
+        j += int(endlist[pis]) * (256 ** (3 - pis))
+        print("j ", j, pis)
 
     print(i ," --- ", j)
-
-
-
-
-
-
-
-
-
-
 
     return j - i
 

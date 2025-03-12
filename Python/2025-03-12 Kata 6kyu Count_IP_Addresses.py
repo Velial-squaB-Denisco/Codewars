@@ -17,7 +17,7 @@ def ips_between(start ,end):
         j += 256 - int(pis)
         print("j ", j)
 
-    print("---", a)
+    print("---")
 
 
 

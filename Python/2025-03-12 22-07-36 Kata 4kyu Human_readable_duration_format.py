@@ -18,6 +18,11 @@ def format_duration(seconds):
     h = 0 
     d = 0
     y = 0
+    ss = ""
+    ms = ""
+    hs = ""
+    ds = ""
+    ys = ""
 
     print(s, s, s)
     
@@ -39,14 +44,12 @@ def format_duration(seconds):
 
     if s == 0:
         res = "now"
-    
-    # elif s < 59:
-    #     res = f"{s} seconds"
-    
-    # elif s > 59:
-    #     res = f"{m} "
 
-    if s 
+    if s == 1:
+        ss = f"{s} second"
+    
+    if 1 > s > 59:
+        ss = f"{s} " 
 
     print(res, s, m, h, d, y)
     return res

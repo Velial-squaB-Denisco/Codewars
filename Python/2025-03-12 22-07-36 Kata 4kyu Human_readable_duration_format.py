@@ -35,9 +35,18 @@ def format_duration(seconds):
                         if d > 59:
                             while (d > 59):
                                 y += 1
-                                d -+ 60 
+                                d -= 60 
 
-    res = s + m
+    if s == 0:
+        res = "now"
+    
+    # elif s < 59:
+    #     res = f"{s} seconds"
+    
+    # elif s > 59:
+    #     res = f"{m} "
+
+    if s 
 
     print(res, s, m, h, d, y)
     return res

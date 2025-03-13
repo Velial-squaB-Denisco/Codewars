@@ -46,12 +46,37 @@ def format_duration(seconds):
         res = "now"
 
     if s == 1:
-        ss = f"{s} second"
+        ss = f"{s} second "
     
     if 1 > s > 59:
-        ss = f"{s} " 
+        ss = f"{s} seconds "
+    
+    if m == 1:
+        ms = f"{m} minute "
+    
+    if 1 > m > 59:
+        ms = f"{m} minutes "
+    
+    if h == 1:
+        hs = f"{h} hours "
+    
+    if 1 > h > 59:
+        hs = f"{h} hours "
 
-    print(res, s, m, h, d, y)
-    return res
+    if d == 1:
+        ds = f"{d} day "
+    
+    if 1 > h > 59:
+        hs = f"{h} days "
 
-print(format_duration(3600))
+    if y == 1:
+        ys = f"{y} year "
+    
+    if 1 > y > 59:
+        ys = f"{y} years "
+
+    print(res, ss, ms, hs, ds, ys)
+    res = ys + ds + hs + ms + ss
+    return res 
+
+print(format_duration(205851834))

@@ -13,23 +13,33 @@
 
 def format_duration(seconds):
     res = ""
-    s = seconds
+    s = int(seconds)
     m = 0
     h = 0 
     d = 0
     y = 0
+
+    print(s, s, s)
     
     while (s > 59):
-
         m += 1
-        s = s - 60
+        s -= 60
         if m > 59:
             while (m > 59):
                 h += 1
-                
+                m -= 60 
+                if h > 59:
+                    while (h > 59):
+                        d += 1
+                        h -= 60
+                        if d > 59:
+                            while (d > 59):
+                                y += 1
+                                d -+ 60 
 
+    res = s + m
 
-    print(res , seconds)
+    print(res, s, m, h, d, y)
     return res
 
 print(format_duration(3600))

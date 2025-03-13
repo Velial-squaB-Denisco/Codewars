@@ -17,4 +17,8 @@ class Node:
 
 node1 = Node(1)
 node2 = Node(2)
-print(node1, node2)
+
+node1.next = node2
+
+node1.next
+print(node1)

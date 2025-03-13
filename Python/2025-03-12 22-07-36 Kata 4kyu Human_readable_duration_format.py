@@ -63,6 +63,18 @@ def format_duration(seconds):
     if 1 > h > 59:
         hs = f"{h} hours"
 
+    if d == 1:
+        ds = f"{d} day"
+    
+    if 1 > h > 59:
+        hs = f"{h} days"
+
+    if y == 1:
+        ys = f"{y} year"
+    
+    if 1 > y > 59:
+        ys = f"{y} years"
+
     print(res, s, m, h, d, y)
     return res
 

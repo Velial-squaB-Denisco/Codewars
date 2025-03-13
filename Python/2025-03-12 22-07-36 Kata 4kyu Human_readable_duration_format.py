@@ -41,7 +41,6 @@ def format_duration(seconds):
     elif len(parts) == 2:
         return " and ".join(parts)
     else:
-        return ", ".join(parts[:-1]) + ", and " + parts[-1]
+        return ", ".join(parts[:-1]) + " and " + parts[-1]
 
-# Пример использования
 print(format_duration(205851834))

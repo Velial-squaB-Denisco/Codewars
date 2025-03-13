@@ -12,71 +12,36 @@
     "1 hour, 1 minute and 2 seconds"""
 
 def format_duration(seconds):
-    res = ""
-    s = int(seconds)
-    m = 0
-    h = 0 
-    d = 0
-    y = 0
-    ss = ""
-    ms = ""
-    hs = ""
-    ds = ""
-    ys = ""
+    if seconds == 0:
+        return "now"
 
-    print(s, s, s)
-    
-    while (s > 59):
-        m += 1
-        s -= 60
-        if m > 59:
-            while (m > 59):
-                h += 1
-                m -= 60 
-                if h > 59:
-                    while (h > 59):
-                        d += 1
-                        h -= 60
-                        if d > 59:
-                            while (d > 59):
-                                y += 1
-                                d -= 60 
+    years = seconds // (365 * 24 * 60 * 60)
+    seconds %= (365 * 24 * 60 * 60)
+    days = seconds // (24 * 60 * 60)
+    seconds %= (24 * 60 * 60)
+    hours = seconds // (60 * 60)
+    seconds %= (60 * 60)
+    minutes = seconds // 60
+    seconds %= 60
 
-    if s == 0:
-        res = "now"
+    parts = []
+    if years > 0:
+        parts.append(f"{years} year" + ("s" if years > 1 else ""))
+    if days > 0:
+        parts.append(f"{days} day" + ("s" if days > 1 else ""))
+    if hours > 0:
+        parts.append(f"{hours} hour" + ("s" if hours > 1 else ""))
+    if minutes > 0:
+        parts.append(f"{minutes} minute" + ("s" if minutes > 1 else ""))
+    if seconds > 0:
+        parts.append(f"{seconds} second" + ("s" if seconds > 1 else ""))
 
-    if s == 1:
-        ss = f"{s} second "
-    
-    if 1 > s > 59:
-        ss = f"{s} seconds "
-    
-    if m == 1:
-        ms = f"{m} minute "
-    
-    if 1 > m > 59:
-        ms = f"{m} minutes "
-    
-    if h == 1:
-        hs = f"{h} hours "
-    
-    if 1 > h > 59:
-        hs = f"{h} hours "
+    if len(parts) == 1:
+        return parts[0]
+    elif len(parts) == 2:
+        return " and ".join(parts)
+    else:
+        return ", ".join(parts[:-1]) + ", and " + parts[-1]
 
-    if d == 1:
-        ds = f"{d} day "
-    
-    if 1 > h > 59:
-        hs = f"{h} days "
-
-    if y == 1:
-        ys = f"{y} year "
-    
-    if 1 > y > 59:
-        ys = f"{y} years "
-
-    print(res, ss, ms, hs, ds, ys)
-    res = ys + ds + hs + ms + ss
-    return res 
-
+# Пример использования
 print(format_duration(205851834))

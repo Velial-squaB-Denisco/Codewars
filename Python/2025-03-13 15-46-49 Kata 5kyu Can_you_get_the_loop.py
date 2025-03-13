@@ -6,3 +6,15 @@ node.next"""
 
 def loop_size(node):
     pass
+
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+    def __str__(self):
+        return f"[{self.data}] -> {self.next}"
+
+node1 = Node(1)
+node2 = Node(2)
+print(node1, node2)

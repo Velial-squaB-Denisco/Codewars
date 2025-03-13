@@ -12,4 +12,10 @@
     "1 hour, 1 minute and 2 seconds"""
 
 def format_duration(seconds):
-    pass
+    res = 0
+    while seconds % 60 == 0:
+        res += seconds % 60
+        print(res)
+    return res
+
+print(format_duration(64))

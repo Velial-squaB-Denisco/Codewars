@@ -49,7 +49,19 @@ def format_duration(seconds):
         ss = f"{s} second"
     
     if 1 > s > 59:
-        ss = f"{s} " 
+        ss = f"{s} seconds"
+    
+    if m == 1:
+        ms = f"{m} minute"
+    
+    if 1 > m > 59:
+        ms = f"{m} minutes"
+    
+    if h == 1:
+        hs = f"{h} hours"
+    
+    if 1 > h > 59:
+        hs = f"{h} hours"
 
     print(res, s, m, h, d, y)
     return res

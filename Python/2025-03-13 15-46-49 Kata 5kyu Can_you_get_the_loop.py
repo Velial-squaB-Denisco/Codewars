@@ -4,9 +4,6 @@
 # Use the `next' attribute to get the following node
 node.next"""
 
-def loop_size(node):
-    pass
-
 class Node:
     def __init__(self,data):
         self.data = data
@@ -14,14 +11,7 @@ class Node:
 
     def __str__(self):
         return f"[{self.data}] -> {self.next}"
-a = 13
-for i in range(1, a):
-    pass
 
-node1 = Node(1)
-node2 = Node(2)
-
-node1.next = node2
-
-node1.next
-print(node1)
+def loop_size(node):
+    for i in range(node):
+        node[i] = Node(i)

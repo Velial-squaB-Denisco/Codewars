@@ -3,8 +3,8 @@
 Добро пожаловать в мой репозиторий с решениями задач с Codewars! Здесь вы найдете разнообразные решения задач, которые я выполнил для повышения своего уровня на платформе Codewars.
 
 <div align="center">
-  <a href="https://www.codewars.com/users/ppoi42477@gmail.com">
-    <img src="https://www.codewars.com/users/ppoi42477@gmail.com/badges/large" alt="Codewars"/>
+  <a href="https://www.codewars.com/users/Velial-squaB-Denisco">
+    <img src="https://www.codewars.com/users/Velial-squaB-Denisco/badges/large" alt="Codewars"/>
   </a>
 </div>
 

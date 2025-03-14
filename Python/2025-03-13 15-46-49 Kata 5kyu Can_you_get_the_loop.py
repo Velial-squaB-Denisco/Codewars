@@ -16,9 +16,13 @@ def main():
     loop_size(5)
 
 def loop_size(node):
+
+    nodes = []
+
     for i in range(node):
-        node[i] = Node(i)
-        print(node[i])
+        nodes.append(Node(i))
+        if i > 0:
+            nodes[i-1].next = nodes[i]
 
 if __name__ == "__main__":
     main()

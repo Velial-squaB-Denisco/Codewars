@@ -14,4 +14,4 @@ import numpy as np
 def create_matrix(N, value):
     return np.full((N, N), value)
 
-print(create_matrix(2))
+print(create_matrix(2, 4))

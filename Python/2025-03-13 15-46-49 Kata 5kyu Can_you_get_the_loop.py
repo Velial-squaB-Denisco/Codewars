@@ -12,7 +12,13 @@ class Node:
     def __str__(self):
         return f"[{self.data}] -> {self.next}"
 
+def main():
+    loop_size(5)
+
 def loop_size(node):
     for i in range(node):
         node[i] = Node(i)
         print(node[i])
+
+if __name__ == "__main__":
+    main()

@@ -80,3 +80,6 @@ def create_matrix(N):
 
     # Генерация случайного целого числа в диапазоне от 1 до 10
     matrix = np.empty((N, N), dtype=int) # Стандартно dtupe = float
+
+
+

@@ -24,5 +24,9 @@ def loop_size(node):
         if i > 0:
             nodes[i-1].next = nodes[i]
 
+    nodes[-1].next = nodes[0]
+
+    return len(nodes)
+
 if __name__ == "__main__":
     main()

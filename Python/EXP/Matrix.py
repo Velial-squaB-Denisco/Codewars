@@ -69,3 +69,5 @@ print("Генерация случайного числа с плавающей 
 elements = [1, 2, 3, 4, 5]
 random_element = random.choice(elements)
 print("Выбор случайного элемента из списка","\n", random_element)
+
+# Ручное заполнение матрицы 

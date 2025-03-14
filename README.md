@@ -2,23 +2,17 @@
 
 Добро пожаловать в мой репозиторий с решениями задач с Codewars! Здесь вы найдете разнообразные решения задач, которые я выполнил для повышения своего уровня на платформе Codewars.
 
-<div align="center">
-  <a href="https://www.codewars.com/users/Velial-squaB-Denisco">
-    <img src="https://www.codewars.com/users/Velial-squaB-Denisco/badges/large" alt="Codewars"/>
-  </a>
-</div>
-
 ## Описание
 
 Этот репозиторий создан с целью улучшения моих навыков программирования и решения задач. Codewars предоставляет отличную платформу для тренировки и совершенствования навыков, и я стремлюсь делиться своими решениями, чтобы помочь другим и получить обратную связь.
 
 ## Статистика аккаунта Codewars
 
-- **Уровень**: [Ваш текущий уровень]
-- **Решенные задачи**: [Количество решенных задач]
-- **Заработанные очки**: [Количество заработанных очков]
-- **Достижения**: [Список достижений, если есть]
-
+<div align="center">
+  <a href="https://www.codewars.com/users/Velial-squaB-Denisco">
+    <img src="https://www.codewars.com/users/Velial-squaB-Denisco/badges/large" alt="Codewars"/>
+  </a>
+</div>
 
 ## Вклад
 

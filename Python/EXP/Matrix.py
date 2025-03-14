@@ -7,7 +7,7 @@ def create_matrix(N):
 
 print(create_matrix(2))
 
-# Заполнение матрицы 
+# Заполнение матрицы I
 
 import numpy as np
 

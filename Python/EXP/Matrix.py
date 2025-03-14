@@ -5,7 +5,7 @@ import numpy as np
 def create_matrix(N):
     return np.zeros((N, N))
 
-print(create_matrix(2))
+print("Нулевая матрица N x N","\n",create_matrix(2))
 
 # Заполнение матрицы I
 
@@ -14,7 +14,7 @@ import numpy as np
 def create_matrix(N, value):
     return np.full((N, N), value)
 
-print(create_matrix(2, 4))
+print("Заполнение матрицы I","\n",create_matrix(2, 4))
 
 # Заполнение матрицы II
 
@@ -23,7 +23,7 @@ import numpy as np
 def create_matrix(N, value):
     return np.arange(value).reshape(N, N)
 
-print(create_matrix(2, 4))
+print("Заполнение матрицы II","\n",create_matrix(2, 4))
 
 # Заполнение матрицы III
 
@@ -33,4 +33,4 @@ def create_matrix(N, value):
     matrix = np.empty((N, N))
     return matrix
 
-print(create_matrix(2, 4))
+print("Заполнение матрицы III","\n", create_matrix(2, 4))

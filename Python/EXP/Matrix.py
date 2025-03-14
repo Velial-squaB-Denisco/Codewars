@@ -71,3 +71,4 @@ random_element = random.choice(elements)
 print("Выбор случайного элемента из списка","\n", random_element)
 
 # Ручное заполнение матрицы 
+

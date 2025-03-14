@@ -60,3 +60,12 @@ print("Заполнение матрицы IV","\n", create_matrix(2))
 # Генерация случайного числа с плавающей запятой в диапазоне от 0 до 1
 random_float = random.random()
 print(random_float)
+
+# Генерация случайного числа с плавающей запятой в диапазоне от 1.5 до 10.5
+random_float_in_range = random.uniform(1.5, 10.5)
+print(random_float_in_range)
+
+# Выбор случайного элемента из списка
+elements = [1, 2, 3, 4, 5]
+random_element = random.choice(elements)
+print(random_element)

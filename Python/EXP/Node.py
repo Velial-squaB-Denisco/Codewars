@@ -18,3 +18,8 @@ def loop_size(node):
     nodes[-1].next = nodes[0]
 
     return len(nodes)
+
+
+
+if __name__ == "__main__":
+    main()

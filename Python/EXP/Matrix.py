@@ -31,6 +31,10 @@ import numpy as np
 
 def create_matrix(N, value):
     matrix = np.empty((N, N))
+    for i in range(N):
+        for j in range(N):
+            matrix[i][j] = int(value)
+
     return matrix
 
 print("Заполнение матрицы III","\n", create_matrix(2, 4))

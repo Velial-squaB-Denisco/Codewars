@@ -14,8 +14,9 @@ class Node:
 
     def __str__(self):
         return f"[{self.data}] -> {self.next}"
-
-
+a = 13
+for i in range(1, a):
+    pass
 
 node1 = Node(1)
 node2 = Node(2)

@@ -24,3 +24,13 @@ def create_matrix(N, value):
     return np.arange(value).reshape(N, N)
 
 print(create_matrix(2, 4))
+
+# Заполнение матрицы III
+
+import numpy as np
+
+def create_matrix(N, value):
+    matrix = np.empty((N, N))
+    return matrix
+
+print(create_matrix(2, 4))

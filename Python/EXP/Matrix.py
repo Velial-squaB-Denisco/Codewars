@@ -21,7 +21,6 @@ print(create_matrix(2, 4))
 import numpy as np
 
 def create_matrix(N, value):
-    matrix = np.full((N, N), range(value))  
-    return matrix
+    return np.arange(value).reshape(N, N)
 
 print(create_matrix(2, 4))

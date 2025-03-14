@@ -15,6 +15,8 @@ class Node:
     def __str__(self):
         return f"[{self.data}] -> {self.next}"
 
+
+
 node1 = Node(1)
 node2 = Node(2)
 

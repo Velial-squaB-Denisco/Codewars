@@ -30,7 +30,7 @@ print("Заполнение матрицы II","\n",create_matrix(2, 4))
 import numpy as np
 
 def create_matrix(N, value):
-    matrix = np.empty((N, N))
+    matrix = np.empty((N, N), dtype=int) # Стандартно dtupe = float
     for i in range(N):
         for j in range(N):
             matrix[i][j] = int(value)

@@ -1,4 +1,3 @@
-
 # Нулевая матрица N x N
 
 import numpy as np

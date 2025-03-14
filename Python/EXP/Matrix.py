@@ -82,4 +82,3 @@ def create_matrix(N):
     matrix = np.empty((N, N), dtype=int) # Стандартно dtupe = float
 
 
-

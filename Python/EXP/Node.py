@@ -19,7 +19,8 @@ def loop_size(node):
 
     return len(nodes)
 
-
+def main():
+    print(loop_size(5))
 
 if __name__ == "__main__":
     main()

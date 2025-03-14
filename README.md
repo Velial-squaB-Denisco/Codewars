@@ -7,7 +7,7 @@
 Этот репозиторий создан с целью улучшения моих навыков программирования и решения задач. Codewars предоставляет отличную платформу для тренировки и совершенствования навыков, и я стремлюсь делиться своими решениями, чтобы помочь другим и получить обратную связь.
 
 ## Статистика аккаунта Codewars
-
+<br>
 <div align="center">
   <a href="https://www.codewars.com/users/Velial-squaB-Denisco">
     <img src="https://www.codewars.com/users/Velial-squaB-Denisco/badges/large" alt="Codewars"/>

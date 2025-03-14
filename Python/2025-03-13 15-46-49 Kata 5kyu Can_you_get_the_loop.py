@@ -4,5 +4,29 @@
 # Use the `next' attribute to get the following node
 node.next"""
 
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+    def __str__(self):
+        return f"[{self.data}] -> {self.next}"
+
+def main():
+    loop_size(5)
+
 def loop_size(node):
-    pass
+
+    nodes = []
+
+    for i in range(node):
+        nodes.append(Node(i))
+        if i > 0:
+            nodes[i-1].next = nodes[i]
+
+    nodes[-1].next = nodes[0]
+
+    return len(nodes)
+
+if __name__ == "__main__":
+    main()

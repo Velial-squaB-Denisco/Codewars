@@ -32,3 +32,6 @@
 с первой строкой [a, b, c, d], то:
 
 det(M) = a * det(a_minor) - b * det(b_minor) + c * det(c_minor) - d * det(d_minor)"""
+
+def determinant(matrix):
+    pass

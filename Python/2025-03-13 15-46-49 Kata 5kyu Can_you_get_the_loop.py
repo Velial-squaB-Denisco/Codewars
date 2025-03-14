@@ -15,3 +15,4 @@ class Node:
 def loop_size(node):
     for i in range(node):
         node[i] = Node(i)
+        print(node[i])

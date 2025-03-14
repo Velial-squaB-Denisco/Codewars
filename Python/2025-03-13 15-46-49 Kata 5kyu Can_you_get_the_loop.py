@@ -13,6 +13,7 @@ class Node:
         return f"[{self.data}] -> {self.next}"
 
 def main():
+    
     print(loop_size(5))
 
 def loop_size(node):

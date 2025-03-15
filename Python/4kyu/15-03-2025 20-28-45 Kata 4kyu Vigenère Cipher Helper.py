@@ -91,10 +91,7 @@ class VigenereCipher(object):
 
         res = ''.join(res)
 
-        print(res1, "\n + \n", res2, "\n =")
-        print("mod", mod)
-        print(f"{n} || {self.text} || {res}")
-
+        return res
     
     def decode(self, text):
         pass

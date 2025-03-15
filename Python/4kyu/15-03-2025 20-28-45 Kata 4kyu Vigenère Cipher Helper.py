@@ -76,22 +76,24 @@ class VigenereCipher(object):
                     res1.append(j)
 
         res2 = []
-        for ik in range(len(newkey)):
-            for jk in range(len(self.alphabet)):
-                if newkey[ik] == self.alphabet[jk]:
-                    res2.append(jk)
+        for i in range(len(newkey)):
+            for j in range(len(self.alphabet)):
+                if newkey[i] == self.alphabet[j]:
+                    res2.append(j)
 
         mod = []
         for i in range(len(self.text)):
             mod.append((res1[i] + res2[i]) % n)
 
         res = []
-        for i in range(len(self.alphabet)):
-            pass
+        for i in mod:
+            res.append(self.alphabet[i])
+
+        res = ''.join(res)
 
         print(res1, "\n + \n", res2, "\n =")
         print("mod", mod)
-        print(f"{n} || {self.text} || {newkey}")
+        print(f"{n} || {self.text} || {res}")
 
     
     def decode(self, text):

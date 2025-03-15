@@ -36,4 +36,9 @@ det(M) = a * det(a_minor) - b * det(b_minor) + c * det(c_minor) - d * det(d_mino
 import numpy as np
 
 def determinant(matrix):
-    pass
+    mat = np.empty((matrix, matrix), dtype = int)
+    print(mat)
+
+    return 0
+
+print(determinant(3))

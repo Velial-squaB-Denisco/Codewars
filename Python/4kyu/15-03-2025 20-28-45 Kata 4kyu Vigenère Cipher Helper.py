@@ -52,3 +52,17 @@ c.encode('CODEWARS'); // returns 'CODEWARS'
 (как указано выше) возникнет ошибка:
 
 UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)"""
+
+class VigenereCipher(object):
+    def __init__(self, key, alphabet):
+        self.key = key
+        self.alphabet = alphabet
+    
+    def encode(self, text):
+        pass
+    
+    def decode(self, text):
+        pass
+
+conf = VigenereCipher("password", 'abcdefghijklmnopqrstuvwxyz')
+print(conf.key)

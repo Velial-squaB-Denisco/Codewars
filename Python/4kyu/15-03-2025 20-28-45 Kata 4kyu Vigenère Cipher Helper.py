@@ -55,10 +55,13 @@ UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordin
 
 class VigenereCipher(object):
     def __init__(self, key, alphabet):
-        pass
+        self.key = key
+        self.alphabet = alphabet
     
     def encode(self, text):
         pass
     
     def decode(self, text):
         pass
+
+    key = VigenereCipher("password", 'abcdefghijklmnopqrstuvwxyz')

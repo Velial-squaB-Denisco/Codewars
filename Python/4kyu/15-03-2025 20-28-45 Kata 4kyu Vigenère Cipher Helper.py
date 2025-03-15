@@ -64,4 +64,5 @@ class VigenereCipher(object):
     def decode(self, text):
         pass
 
-    key = VigenereCipher("password", 'abcdefghijklmnopqrstuvwxyz')
+conf = VigenereCipher("password", 'abcdefghijklmnopqrstuvwxyz')
+print(conf.key)

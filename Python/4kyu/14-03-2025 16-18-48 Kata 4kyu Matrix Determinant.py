@@ -49,6 +49,6 @@ def determinant(matrix):
         a = mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0]
     print(mat)
 
-    return len(mat)
+    return a
 
-print(determinant(3))
+print(determinant(2))

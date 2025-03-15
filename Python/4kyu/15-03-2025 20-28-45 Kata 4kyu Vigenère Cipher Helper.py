@@ -66,13 +66,11 @@ class VigenereCipher(object):
         newkey = self.key * keyl
         i = 0
         for i in range(len(self.text)):
-            print(self.text[i], i)
             for j in range(len(self.alphabet)):
                 if self.text[i] == self.alphabet[j]:
                     print(self.alphabet[j], j)
 
         for ik in range(len(newkey)):
-            print("ik", newkey[ik] , ik)
             for jk in range(len(self.alphabet)):
                 if newkey[ik] == self.alphabet[jk]:
                     print(self.alphabet[jk], jk)

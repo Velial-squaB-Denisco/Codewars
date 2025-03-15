@@ -65,4 +65,6 @@ class VigenereCipher(object):
         pass
 
 conf = VigenereCipher("password", 'abcdefghijklmnopqrstuvwxyz')
+e = conf.encode("hello")
+d = conf.decode(e)
 print(conf.key)

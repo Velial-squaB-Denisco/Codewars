@@ -61,6 +61,7 @@ class VigenereCipher(object):
     def encode(self, text):
         self.text = text
 
+        keyi = 0
         n = len(self.alphabet)
         keyl = len(self.text) / len(self.key)
         newkey = list()
@@ -68,7 +69,9 @@ class VigenereCipher(object):
     # extended_key = (key_str * ((len(hello_str) // len(key_str)) + 1))[:len(hello_str)]
 
         for a in range(len(self.text)):
-            newkey.append(self.key[a])
+            newkey.append(self.key[a] + self.key[keyi])
+            keyi = (keyi + 1) % len(self.key)
+
         print(newkey)
 
         for i in range(len(self.text)):

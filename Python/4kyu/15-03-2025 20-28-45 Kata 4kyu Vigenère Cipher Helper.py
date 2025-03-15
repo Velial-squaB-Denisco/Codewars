@@ -62,9 +62,10 @@ class VigenereCipher(object):
         self.text = text
 
         n = len(self.alphabet)
-        keyl = len(self.text) // len(self.key)
-        newkey = self.key * keyl
-        i = 0
+        keyl = len(self.text) / len(self.key)
+        newkey = list(self.key)
+        print(newkey)
+
         for i in range(len(self.text)):
             for j in range(len(self.alphabet)):
                 if self.text[i] == self.alphabet[j]:

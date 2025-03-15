@@ -47,6 +47,8 @@ def determinant(matrix):
         a = mat[1][2]
     if len(mat) == 2:
         a = mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0]
+    if len(mat) > 2:
+        pass
     print(mat)
 
     return a

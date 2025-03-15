@@ -67,9 +67,8 @@ class VigenereCipher(object):
         i = 0
         for i in range(len(self.text)):
             print(self.text[i])
-        for self.text in self.alphabet:
-            # i += 1
-            print(i)
+            for j in self.alphabet:
+                print(j)
 
         print(f"{n} || {keyl} || {newkey}")
 

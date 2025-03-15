@@ -37,6 +37,9 @@ import numpy as np
 
 def determinant(matrix):
     mat = np.empty((matrix, matrix), dtype = int)
+    for i in range(matrix):
+        for j in range(matrix):
+            mat[i][j] = i * j
     print(mat)
 
     return 0

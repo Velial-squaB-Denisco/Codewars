@@ -51,6 +51,6 @@ def determinant(matrix):
         a = np.linalg.det(mat)
     print(mat)
 
-    return a
+    return int(a)
 
 print(determinant(3))

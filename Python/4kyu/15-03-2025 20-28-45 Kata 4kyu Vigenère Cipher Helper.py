@@ -68,8 +68,8 @@ class VigenereCipher(object):
 
     # extended_key = (key_str * ((len(hello_str) // len(key_str)) + 1))[:len(hello_str)]
 
-        for a in range(len(self.text)):
-            newkey.append(self.key[a] + self.key[keyi])
+        for a in self.text:
+            newkey.append(self.key[keyi])
             keyi = (keyi + 1) % len(self.key)
 
         print(newkey)

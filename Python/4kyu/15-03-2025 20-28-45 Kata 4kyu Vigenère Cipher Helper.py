@@ -63,7 +63,6 @@ class VigenereCipher(object):
 
         keyi = 0
         n = len(self.alphabet)
-        keyl = len(self.text) / len(self.key)
         newkey = list()
 
         for a in self.text:
@@ -81,6 +80,11 @@ class VigenereCipher(object):
             for jk in range(len(self.alphabet)):
                 if newkey[ik] == self.alphabet[jk]:
                     res2.append(jk)
+
+        mod = []
+        for i in range(len(self.text)):
+            mod.append((res1[i] + res2[i]) % n)
+        print(mod)
 
         print(res1, "\n", res2)
         print(f"{n} || {self.text} || {newkey}")

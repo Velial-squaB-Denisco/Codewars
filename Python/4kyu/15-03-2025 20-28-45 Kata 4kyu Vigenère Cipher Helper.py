@@ -61,15 +61,28 @@ class VigenereCipher(object):
     def encode(self, text):
         self.text = text
 
+        keyi = 0
         n = len(self.alphabet)
-        keyl = len(self.text) // len(self.key)
-        newkey = self.key * keyl
-        i = 0
+        keyl = len(self.text) / len(self.key)
+        newkey = list()
+
+    # extended_key = (key_str * ((len(hello_str) // len(key_str)) + 1))[:len(hello_str)]
+
+        for a in range(len(self.text)):
+            newkey.append(self.key[a] + self.key[keyi])
+            keyi = (keyi + 1) % len(self.key)
+
+        print(newkey)
+
         for i in range(len(self.text)):
-            print(self.text[i])
-        for self.text in self.alphabet:
-            # i += 1
-            print(i)
+            for j in range(len(self.alphabet)):
+                if self.text[i] == self.alphabet[j]:
+                    print(self.alphabet[j], j)
+
+        for ik in range(len(newkey)):
+            for jk in range(len(self.alphabet)):
+                if newkey[ik] == self.alphabet[jk]:
+                    print(self.alphabet[jk], jk)
 
         print(f"{n} || {keyl} || {newkey}")
 

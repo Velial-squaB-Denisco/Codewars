@@ -72,7 +72,10 @@ class VigenereCipher(object):
                     print(self.alphabet[j], j)
 
         for ik in range(len(newkey)):
-            print(newkey[ik] , ik)
+            print("ik", newkey[ik] , ik)
+            for jk in range(len(self.alphabet)):
+                if self.text[ik] == self.alphabet[jk]:
+                    print(self.alphabet[jk], jk)
 
         print(f"{n} || {keyl} || {newkey}")
 

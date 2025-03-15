@@ -43,14 +43,14 @@ def determinant(matrix):
         for j in range(matrix):
             mat[i][j] = i * j
 
-    if len(mat) == 1:
+    if matrix == 1:
         a = mat[1][2]
-    if len(mat) == 2:
+    if matrix == 2:
         a = mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0]
-    if len(mat) > 2:
-        pass
+    if matrix > 2:
+        a = np.linalg.det(mat)
     print(mat)
 
     return a
 
-print(determinant(2))
+print(determinant(3))

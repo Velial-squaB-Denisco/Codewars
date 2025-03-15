@@ -84,9 +84,13 @@ class VigenereCipher(object):
         mod = []
         for i in range(len(self.text)):
             mod.append((res1[i] + res2[i]) % n)
-        print(mod)
 
-        print(res1, "\n", res2)
+        res = []
+        for i in range(len(self.alphabet)):
+            pass
+
+        print(res1, "\n + \n", res2, "\n =")
+        print("mod", mod)
         print(f"{n} || {self.text} || {newkey}")
 
     

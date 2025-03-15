@@ -59,7 +59,7 @@ class VigenereCipher(object):
         self.alphabet = alphabet
     
     def encode(self, text):
-        
+
         try:
             self.text = text
 
@@ -96,7 +96,7 @@ class VigenereCipher(object):
             return res
         
         except:
-
+            print("ERROR")
             return self.text
     
     def decode(self, text):
@@ -126,7 +126,7 @@ class VigenereCipher(object):
 
             mod = []
             for i in range(len(self.text)):
-                mod.append((res1[i] + res2[i]) % n)
+                mod.append((res1[i] - res2[i]) % n)
 
             res = []
             for i in mod:
@@ -137,11 +137,11 @@ class VigenereCipher(object):
             return res
         
         except:
-
+            print("ERROR")
             return self.text
 
 conf = VigenereCipher("key", 'abcdefghijklmnopqrstuvwxyz')
-e = conf.encode("CODEWARS")
+e = conf.encode("hello")
 d = conf.decode(e)
 print(e, d)
 

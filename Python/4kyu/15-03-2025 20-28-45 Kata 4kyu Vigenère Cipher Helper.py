@@ -63,7 +63,12 @@ class VigenereCipher(object):
 
         n = len(self.alphabet)
         keyl = len(self.text) / len(self.key)
-        newkey = list(self.key)
+        newkey = list()
+
+    # extended_key = (key_str * ((len(hello_str) // len(key_str)) + 1))[:len(hello_str)]
+
+        for a in range(len(self.text)):
+            newkey.append(self.key[a])
         print(newkey)
 
         for i in range(len(self.text)):

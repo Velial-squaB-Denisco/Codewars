@@ -59,8 +59,13 @@ class VigenereCipher(object):
         self.alphabet = alphabet
     
     def encode(self, text):
-        n = len(conf.alphabet)
-        print(n)
+        self.text = text
+
+        n = len(self.alphabet)
+        keyl = len(self.text) // len(self.key)
+        newkey = self.key * keyl
+        print(f"{n} || {keyl} || {newkey}")
+
     
     def decode(self, text):
         pass
@@ -73,3 +78,6 @@ d = conf.decode(e)
 # "codewars"
 # "abcdefghijklmnopqrstuvwxyz"
 # "password"
+
+"abcdefghijklmnopqrstuvwxyz"
+"keykeykeykeykeykeykeykey"

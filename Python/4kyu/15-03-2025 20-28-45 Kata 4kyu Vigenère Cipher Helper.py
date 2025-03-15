@@ -66,29 +66,24 @@ class VigenereCipher(object):
         keyl = len(self.text) / len(self.key)
         newkey = list()
 
-    # extended_key = (key_str * ((len(hello_str) // len(key_str)) + 1))[:len(hello_str)]
-
         for a in self.text:
             newkey.append(self.key[keyi])
             keyi = (keyi + 1) % len(self.key)
-
-        print(newkey)
 
         res1 = []
         for i in range(len(self.text)):
             for j in range(len(self.alphabet)):
                 if self.text[i] == self.alphabet[j]:
                     res1.append(j)
-                    print(self.alphabet[j], j, res1)
 
         res2 = []
         for ik in range(len(newkey)):
             for jk in range(len(self.alphabet)):
                 if newkey[ik] == self.alphabet[jk]:
                     res2.append(jk)
-                    print(self.alphabet[jk], jk, res2)
 
-        print(f"{n} || {keyl} || {newkey}")
+        print(res1, "\n", res2)
+        print(f"{n} || {self.text} || {newkey}")
 
     
     def decode(self, text):

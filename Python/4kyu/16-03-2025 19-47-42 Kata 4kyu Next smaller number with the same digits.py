@@ -15,3 +15,6 @@ next_smaller(135) == -1
 next_smaller(1027) == -1  # 0721 is out since we don't write numbers with leading zeros
 некоторые тесты будут включать очень большие числа.
 в тестовых данных используются только положительные целые числа."""
+
+def next_smaller(n):
+    pass

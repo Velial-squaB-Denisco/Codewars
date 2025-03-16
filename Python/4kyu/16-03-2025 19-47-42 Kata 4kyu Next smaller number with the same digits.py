@@ -31,7 +31,9 @@ def next_smaller(n):
                 nm2.append(int(nm1))
                 nm2.sort()
                 print("Y ", int(m), int(nm1), nm2)
-            
-    return nm2[-1]
+    if len(nm2) > 0:
+        return nm2[-1]
+    else:    
+        return -1
 
 print(next_smaller(907))

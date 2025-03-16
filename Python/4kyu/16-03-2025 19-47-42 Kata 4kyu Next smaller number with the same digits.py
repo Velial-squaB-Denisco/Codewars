@@ -17,4 +17,12 @@ next_smaller(1027) == -1  # 0721 is out since we don't write numbers with leadin
 в тестовых данных используются только положительные целые числа."""
 
 def next_smaller(n):
-    pass
+    n = str(n)
+    n = list(n)
+    for i in range(len(n)):
+        for j in range(len(n)):
+            pass
+
+    return n
+
+print(next_smaller(907))

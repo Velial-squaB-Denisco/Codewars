@@ -47,10 +47,16 @@ def next_smaller(n):
         for j in range(len(n)):
 
             nm.append(n[j - i])
+            print(nm)
+            if nm[0] == "0":
+                continue
+            
             word = ''.join(nm)
-            m.append(word)
+            m.append(int(word))
 
             m.sort()
-        print(m)
 
-print(next_smaller(907))
+        
+    print("END", m)
+
+print(next_smaller(135))

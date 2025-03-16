@@ -18,6 +18,7 @@ next_smaller(1027) == -1  # 0721 is out since we don't write numbers with leadin
 
 def next_smaller(n):
     m = n
+    nm2 = []
 
     n = str(n)
     n = list(n)
@@ -27,8 +28,10 @@ def next_smaller(n):
             nm.append(n[j - i])
             nm1 = ''.join(nm)
             if m > int(nm1):
-                print("Y ", int(nm1), int(m))
+                nm2.append(int(nm1))
+                nm2.sort()
+                print("Y ", int(m), int(nm1), nm2)
             
-    return 0
+    return nm2[-1]
 
 print(next_smaller(907))

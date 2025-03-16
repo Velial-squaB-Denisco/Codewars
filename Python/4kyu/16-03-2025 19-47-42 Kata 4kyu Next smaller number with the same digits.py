@@ -39,7 +39,18 @@ next_smaller(1027) == -1  # 0721 is out since we don't write numbers with leadin
 # print(next_smaller(907))
 
 def next_smaller(n):
-    m = list(str(n))
-    print(m)
+    n = str(n)
+    m = list()
+    word = ""
+    for i in range(len(n)):
+        nm = list()
+        for j in range(len(n)):
+
+            nm.append(n[j - i])
+            word = ''.join(nm)
+            m.append(word)
+
+            m.sort()
+        print(m)
 
 print(next_smaller(907))

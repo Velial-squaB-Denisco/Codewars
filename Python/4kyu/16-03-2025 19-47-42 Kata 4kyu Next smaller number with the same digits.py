@@ -42,21 +42,24 @@ def next_smaller(n):
     n = str(n)
     m = list()
     word = ""
-    for i in range(len(n)):
-        nm = list()
-        for j in range(len(n)):
+    # for i in range(len(n)):
+    #     nm = list()
+    #     for j in range(len(n)):
 
-            nm.append(n[j - i])
-            print(nm)
-            if nm[0] == "0":
-                continue
+    #         nm.append(n[j - i])
+    #         print(nm)
             
-            word = ''.join(nm)
-            m.append(int(word))
+    #     word = ''.join(nm)
+    #     m.append(word)
 
-            m.sort()
+    #     m.sort()
+    for i in range(len(n)):
+        m.append(n[i])
+        print("i", n[i])
+        for j in range(len(n)):
+            m.append(n[i - j])
+            print(n[j - i])
 
-        
-    print("END", m)
+    print("\n","END", m)
 
-print(next_smaller(135))
+print(next_smaller(2071))

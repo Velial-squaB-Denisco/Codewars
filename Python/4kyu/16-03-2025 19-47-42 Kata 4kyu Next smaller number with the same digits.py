@@ -22,9 +22,10 @@ def next_smaller(n):
     n = str(n)
     n = list(n)
     for i in range(len(n)):
+        nm = list()
         for j in range(len(n)):
-            nm = n[j]
-
+            nm.append(n[j])
+        print(nm)
     return 0
 
 print(next_smaller(907))

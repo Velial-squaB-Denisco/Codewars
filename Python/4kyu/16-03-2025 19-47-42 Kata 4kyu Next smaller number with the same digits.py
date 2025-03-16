@@ -25,9 +25,9 @@ def next_smaller(n):
         nm = list()
         for j in range(len(n)):
             nm.append(n[j - i])
-            nm = ''.join(nm)
-            if m < int(nm):
-                print(nm)
+            nm1 = ''.join(nm)
+            if m > int(nm1):
+                print("Y ", int(nm1), int(m))
             
     return 0
 

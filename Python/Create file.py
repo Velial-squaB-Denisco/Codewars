@@ -3,8 +3,9 @@ import datetime
 def create_file(n, name, current_time):
 
     filename = f"{current_time} Kata {n}kyu {str(name)}.py"
+    path = "f{n}kyu"
 
-    with open(filename, 'w', encoding='utf-8') as file:
+    with open(f"C:\\Users\\user\\Documents\\GitHub\Codewars\\Python\\{path}\\{filename}", 'w', encoding='utf-8') as file:
         file.write('""""""')
 
 def main():

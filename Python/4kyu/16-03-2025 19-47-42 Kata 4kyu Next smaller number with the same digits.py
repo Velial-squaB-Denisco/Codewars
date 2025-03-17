@@ -23,7 +23,8 @@ def next_smaller(n):
 
     res = list(permutations(m))
     for i in range(len(res)):
-        print(res[i])
+        if int(res[i][0]) == 0:
+            res = res.pop([i][0])
 
     print("\n","END", res)
 

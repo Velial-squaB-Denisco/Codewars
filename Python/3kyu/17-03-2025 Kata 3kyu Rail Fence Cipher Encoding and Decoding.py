@@ -31,8 +31,12 @@ import numpy as np
 
 def encode_rail_fence_cipher(string, n):
 
-    matrix = np.empty((n, n)) # Стандартно dtupe = float
-    
+    matrix = np.empty((n, n))
+    string = list(string)
+    print(string)
+
     
 def decode_rail_fence_cipher(string, n):
     pass
+
+print(encode_rail_fence_cipher("hello", 3))

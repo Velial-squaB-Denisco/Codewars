@@ -27,3 +27,7 @@ WECRLTEERDSOEEFEAOCAIVDEN
 Однако существуют тесты, в которых знаки препинания учитываются. Не отфильтровывайте знаки препинания, 
 так как они являются частью строки.
 """
+
+def encode_rail_fence_cipher(string, n):
+    
+def decode_rail_fence_cipher(string, n):

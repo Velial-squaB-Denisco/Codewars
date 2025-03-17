@@ -20,12 +20,15 @@ from itertools import permutations
 def next_smaller(n):
     n = str(n)
     m = list(n)
+    result = []
 
     res = list(permutations(m))
+    
     for i in range(len(res)):
         if int(res[i][0]) == 0:
-            res = res.pop([i][0])
+            continue
+        result.append("".join(res[i]))
 
-    print("\n","END", res)
+    print("\n","END", result)
 
 print(next_smaller(2071))

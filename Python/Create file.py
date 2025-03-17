@@ -11,7 +11,7 @@ def create_file(n, name, current_time):
 def main():
     current_time = datetime.datetime.today()
     current_time = current_time.strftime("%d-%m-%Y %H-%M-%S") #%Y-%m-%d
-    create_file(4, "Next smaller number with the same digits", current_time)
+    create_file(4, "Next bigger number with the same digits", current_time)
 
 if __name__ == "__main__":
     main()

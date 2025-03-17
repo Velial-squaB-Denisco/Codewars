@@ -15,6 +15,7 @@ next_smaller(135) == -1
 next_smaller(1027) == -1  # 0721 is out since we don't write numbers with leading zeros
 некоторые тесты будут включать очень большие числа.
 в тестовых данных используются только положительные целые числа."""
+
 from itertools import permutations
 
 def next_smaller(n):
@@ -32,10 +33,10 @@ def next_smaller(n):
     result.sort()
 
     for i in range(len(result)):
-        if result[i] == n:
-            try:
-                return result[i - 1]
-            except:
-                return -1
+        try:
+            if result[i + 1] == n:
+                return int(result[i])
+        except:
+            return -1
 
-print(next_smaller(2071))
+print(next_smaller(135))

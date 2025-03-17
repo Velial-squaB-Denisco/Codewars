@@ -29,6 +29,13 @@ def next_smaller(n):
             continue
         result.append("".join(res[i]))
 
-    print("\n","END", result)
+    result.sort()
+
+    for i in range(len(result)):
+        if result[i] == n:
+            try:
+                return result[i - 1]
+            except:
+                return -1
 
 print(next_smaller(2071))

@@ -15,48 +15,16 @@ next_smaller(135) == -1
 next_smaller(1027) == -1  # 0721 is out since we don't write numbers with leading zeros
 некоторые тесты будут включать очень большие числа.
 в тестовых данных используются только положительные целые числа."""
-
-# def next_smaller(n):
-#     m = n
-#     nm2 = []
-
-#     n = str(n)
-#     n = list(n)
-#     for i in range(len(n)):
-#         nm = list()
-#         for j in range(len(n)):
-#             nm.append(n[j - i])
-#             nm1 = ''.join(nm)
-#             if m > int(nm1):
-#                 nm2.append(int(nm1))
-#                 nm2.sort()
-#                 print("Y ", int(m), int(nm1), nm2)
-#     if len(nm2) > 0:
-#         return nm2[-1]
-#     else:    
-#         return -1
-
-# print(next_smaller(907))
+from itertools import permutations
 
 def next_smaller(n):
     n = str(n)
-    m = list()
-    word = ""
-    for i in range(len(n)):
-        nm = list()
-        for j in range(len(n)):
+    m = list(n)
 
-            nm.append(n[j - i])
-            print(nm)
-            if nm[0] == "0":
-                continue
-            
-            word = ''.join(nm)
-            m.append(int(word))
+    res = list(permutations(m))
+    for i in range(len(res)):
+        print(res[i])
 
-            m.sort()
+    print("\n","END", res)
 
-        
-    print("END", m)
-
-print(next_smaller(135))
+print(next_smaller(2071))

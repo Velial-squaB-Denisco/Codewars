@@ -10,3 +10,30 @@
   9 ==> -1
 111 ==> -1
 531 ==> -1"""
+
+def next_bigger(n):
+    digits = list(str(n))
+    i = len(digits) - 2
+    # Ищем точку i, где digits[i] < digits[i+1]
+    while i >= 0 and digits[i] >= digits[i+1]:
+        i -= 1
+    if i == -1:
+        return -1  # Невозможно сделать больше
+
+    # Ищем j, наибольший индекс справа от i, где digits[j] > digits[i]
+    j = len(digits) - 1
+    while digits[j] <= digits[i]:
+        j -= 1
+
+    # Меняем местами i и j
+    digits[i], digits[j] = digits[j], digits[i]
+
+    # Переворачиваем оставшуюся часть после i
+    digits[i+1:] = reversed(digits[i+1:])
+
+    # Преобразуем обратно в число
+    next_num = int(''.join(digits))
+
+    return next_num
+
+print(next_bigger(12))

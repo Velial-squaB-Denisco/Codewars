@@ -71,3 +71,5 @@ def next_smaller(n):
     next_num = int(''.join(digits))
     
     return next_num if next_num < n else -1
+
+print(next_smaller(100))

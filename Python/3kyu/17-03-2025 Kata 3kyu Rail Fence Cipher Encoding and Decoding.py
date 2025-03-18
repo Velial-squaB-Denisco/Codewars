@@ -44,7 +44,9 @@ def encode_rail_fence_cipher(string, n):
 
     print(matrix, len(string))
 
-    
+    res = []
+    for i in range(n):
+        print(i, matrix[i])
     
 def decode_rail_fence_cipher(string, n):
     pass

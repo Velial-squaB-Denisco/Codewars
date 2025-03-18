@@ -32,15 +32,26 @@ import numpy as np
 def encode_rail_fence_cipher(string, n):
 
     string = list(string)
-    matrix = np.zeros((n, len(string)))
 
-    print(string, matrix)
+    matrix = np.full((n, len(string)), '', dtype=str)
 
-    for i in range(len(matrix)):
-        pass
+    j = n - 2
 
+    for i in range(len(string)):
+        if i < n:
+            matrix[i][i] = string[i]
+        else:
+            matrix[j][i] = string[i]
+            j -= 1
+
+
+    print(matrix, len(string))
+
+    res = []
+    for i in range(n):
+        print(i, "".join(matrix[i]))
     
 def decode_rail_fence_cipher(string, n):
     pass
 
-print(encode_rail_fence_cipher("hello", 3))
+print(encode_rail_fence_cipher("wwwwwwww", 3))

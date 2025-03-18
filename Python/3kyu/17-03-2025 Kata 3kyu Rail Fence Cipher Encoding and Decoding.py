@@ -41,10 +41,12 @@ def encode_rail_fence_cipher(string, n):
 
     j = 0
     for i in range(len(matrix)):
+        if j > n:
+            j = 0
         matrix[i][j] = string[i]
         j += 1
 
-    print(matrix)
+    print(matrix, len(matrix))
     
 def decode_rail_fence_cipher(string, n):
     pass

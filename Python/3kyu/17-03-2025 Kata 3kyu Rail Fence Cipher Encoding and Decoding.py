@@ -48,6 +48,7 @@ def encode_rail_fence_cipher(string, n):
 
         j += d
 
+    print(matrix)
     res = ""
     for i in range(n):
         res += "".join(matrix[i])
@@ -57,4 +58,6 @@ def encode_rail_fence_cipher(string, n):
 def decode_rail_fence_cipher(string, n):
     pass
 
-print(encode_rail_fence_cipher("hellohedda", 4))
+print(encode_rail_fence_cipher("Hello, World!", 4))
+
+print(decode_rail_fence_cipher(encode_rail_fence_cipher("Hello, World!", 4), 4))

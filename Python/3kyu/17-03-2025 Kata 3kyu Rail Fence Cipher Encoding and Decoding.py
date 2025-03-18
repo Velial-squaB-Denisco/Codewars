@@ -56,8 +56,12 @@ def encode_rail_fence_cipher(string, n):
     return res
     
 def decode_rail_fence_cipher(string, n):
+    #//////
+
     pass
+
+    #//////
 
 print(encode_rail_fence_cipher("Hello, World!", 4))
 
-print(decode_rail_fence_cipher(encode_rail_fence_cipher("Hello, World!", 4), 4))
+print(decode_rail_fence_cipher("H !e,Wdloollr", 4))

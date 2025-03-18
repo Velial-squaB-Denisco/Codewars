@@ -35,18 +35,14 @@ def encode_rail_fence_cipher(string, n):
 
     matrix = np.full((n, len(string)), '', dtype=str)
 
-    j = 0; i1 = -1
+    j = n - 2
+
     for i in range(len(string)):
-        if j >= n:
-            j = 0
-        
-        if i <= n:
-            matrix[j][i] = string[i]
-            j += 1
+        if i < n:
+            matrix[i][i] = string[i]
         else:
-            matrix[j][i1] = string[i]
-            i1 -= 1
-            print(i1)
+            matrix[j][i] = string[i]
+            j -= 1
 
 
     print(matrix, len(string))

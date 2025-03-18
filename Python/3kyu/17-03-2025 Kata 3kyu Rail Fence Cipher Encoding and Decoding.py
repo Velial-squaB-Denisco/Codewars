@@ -34,24 +34,18 @@ def encode_rail_fence_cipher(string, n):
     string = list(string)
     matrix = np.empty((n, len(string)), dtype=str)
 
-    # for i in range(len(matrix)):
-    #     for j in range(n):
-    #         matrix[i][j] = string[i]
-    # print(matrix)
-
     j = 0
-    for i in range(len(matrix)):
+    for i in range(len(string)):
         if j > n:
             j = 0
+        if i > n:
+            i = 0
         matrix[i][j] = string[i]
         j += 1
 
-    print(matrix, len(matrix))
+    print(matrix, len(string))
     
 def decode_rail_fence_cipher(string, n):
     pass
 
 print(encode_rail_fence_cipher("hello", 3))
-
-# for i
-#     j++

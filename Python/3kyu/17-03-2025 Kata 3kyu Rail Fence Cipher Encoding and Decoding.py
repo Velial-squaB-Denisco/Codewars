@@ -57,10 +57,8 @@ def encode_rail_fence_cipher(string, n):
     
 def decode_rail_fence_cipher(string, n):
     #//////
-    j = 0
-    for i in range(len(string)):
-        j += n  
-        print(string[j - n:j])
+    for i in range(0, len(string), n):
+        print(string[i:i + n])
 
     #//////
 

@@ -54,4 +54,4 @@ def encode_rail_fence_cipher(string, n):
 def decode_rail_fence_cipher(string, n):
     pass
 
-print(encode_rail_fence_cipher("hello", 3))
+print(encode_rail_fence_cipher("wwwwwwww", 3))

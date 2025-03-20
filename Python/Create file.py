@@ -10,7 +10,7 @@ def create_file(n, name, current_date):
 
 def main():
     current_date = datetime.datetime.today().strftime("%d-%m-%Y")
-    create_file(3, "Rail Fence Cipher Encoding and Decoding", current_date)
+    create_file(3, "Alphabetic Anagrams", current_date)
 
 if __name__ == "__main__":
     main()
